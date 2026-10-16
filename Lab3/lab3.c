@@ -8,6 +8,7 @@
 #define    D_angl 2.54
 #define    D_pul 2.32166
 #define    D_st 2.7076
+
 int n1()
 {
 	int num;
@@ -23,9 +24,12 @@ int n1()
 	printf("Разность %d\n", num2 - num);
 	printf("Остаток от деления %d на %d равен %d\n", num2, num, num2 % num);
 	printf("Умножение %d на %d равно %d\n", num2, num, num2 * num);
-	printf("%d разделить %d равно %d\n", num2, num, num2 / num);
+
+	printf("%d разделить %d равно %f\n", num2, num, (float)num2 / num);
+
 	return 0;
 }
+
 int n2()
 {
 	int dym;
@@ -44,6 +48,7 @@ int n2()
 
 	return 0;
 }
+
 int n3()
 {
 	float a;
@@ -67,6 +72,7 @@ int probel()
 	printf("       \n");
 	return 0;
 }
+
 int main()
 {
 	setlocale(LC_CTYPE, ".UTF8");
